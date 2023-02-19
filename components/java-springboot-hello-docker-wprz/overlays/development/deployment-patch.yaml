@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-docker-wprz
+  namespace: bsutter-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9338c259578c46772bc0493b7fb27f99fcb8fa6c4be7f4f68a733cbf11cbc56e
+        name: my-java-springboot
+        resources: {}
+status: {}
