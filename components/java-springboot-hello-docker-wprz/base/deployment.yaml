@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: java-springboot-hello-docker-wprz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:IncVH-java-springboot-hello-docker-wprz
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9338c259578c46772bc0493b7fb27f99fcb8fa6c4be7f4f68a733cbf11cbc56e
         name: my-java-springboot
         ports:
         - containerPort: 8081
